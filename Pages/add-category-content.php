@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        
 		<title>InuSselmad</title>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/monstyle.css">
