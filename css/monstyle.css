@@ -1,0 +1,18 @@
+
+.margetop{
+    margin-top: 60px;
+}
+
+.str{
+    align-items: center;
+}
+
+.parent{
+   
+    margin-top: inherit;
+}
+
+
+sizel {
+    size: 50px;
+}
