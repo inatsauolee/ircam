@@ -7,9 +7,9 @@ $size = isset($_GET['size']) ? $_GET['size'] : 5; // La nombre des categorys qui
 $page = isset($_GET['page']) ? $_GET['page'] : 1;  // la page choisir 
 $offset = ($page - 1) * $size;
 
-$nomEt = isset($_GET['nomEt']) ? $_GET['nomEt'] : "";
-$requete = "select * from category where label like '%$nomEt%' limit $size offset $offset;";
-$requeteCount = $pdo->query("select count(*) from category where label like '%$nomEt%'")->fetchAll(PDO::FETCH_NUM);
+$nomWo = isset($_GET['nomWo']) ? $_GET['nomWo'] : "";
+$requete = "select * from category where label like '%$nomWo%' limit $size offset $offset;";
+$requeteCount = $pdo->query("select count(*) from category where label like '%$nomWo%'")->fetchAll(PDO::FETCH_NUM);
 $resultatEt = $pdo->query($requete)->fetchAll(PDO::FETCH_ASSOC);
 $resultatCount = count($resultatEt);
 $tabCount = $requeteCount[0][0];
@@ -37,7 +37,7 @@ else
             <div class="panel-body">
                 <form method="get" action="categorys.php" class="form-inline">
                     <div class="form-group">
-                        <input type="text" name="nomEt" placeholder="Taper le nom de category" class="form-control" value="<?php echo $nomEt; ?>">
+                        <input type="text" name="nomWo" placeholder="Taper le Mot" class="form-control" value="<?php echo $nomWo; ?>">
                     </div>
 
 
@@ -47,7 +47,7 @@ else
                     </button>
                     &nbsp &nbsp
                     <a href="add-tawalt-word.php">
-                        <sapn class="glyphicon glyphicon-plus"></sapn> Nouvelle category
+                        <sapn class="glyphicon glyphicon-plus"></sapn> Nouvelle Wor
                     </a>
                 </form>
 
@@ -92,7 +92,7 @@ else
                         <?php for ($i = 1; $i <= $nbrPage; $i++) {  ?>
                             <li class="<?php if ($i == $page) echo 'active' ?>">
 
-                                <a href="words.php?page=<?php echo $i; ?>&nomEt=<?php echo $nomEt; ?>"> <?php echo $i; ?>
+                                <a href="words.php?page=<?php echo $i; ?>&nomWo=<?php echo $nomWo; ?>"> <?php echo $i; ?>
                                 </a>
 
 
