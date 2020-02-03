@@ -21,7 +21,7 @@
             <h1>Learning Zone</h1>
         </div>
     </div>
-    <?php include("add-category-content.php"); ?>
+    <?php include("add-type-content.php"); ?>
 
 
 

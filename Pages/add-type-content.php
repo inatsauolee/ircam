@@ -11,11 +11,11 @@
     <body>
         <div class="container">
             <div class="panel panel-success margetop">
-                <div class="panel-heading">Nouvelle category....</div>
+                <div class="panel-heading">Nouvelle type....</div>
                 <div class="panel-body">
-                    <form method="post" action="insert-category.php">
+                    <form method="post" action="insert-type.php">
                         <div class="form-group">
-                            <input type="text" name="nomCat" placeholder="Taper le nom de la category" class="form-control">
+                            <input type="text" name="nomTy" placeholder="Taper le nom de la type" class="form-control">
                         </div>
 
 

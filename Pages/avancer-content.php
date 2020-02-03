@@ -1,23 +1,25 @@
-<?php 
-    //require_once('identifier.php');
+<?php
+//require_once('identifier.php');
 ?>
 <! DOCTYPE HTML>
-<html>
+    <html>
+
     <head>
         <meta charset="utf-8">
-		<title>InuSselmad</title>
+        <title>InuSselmad</title>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/monstyle.css">
     </head>
+
     <body>
         <?php include("menu.php"); ?>
         <div class="container">
-            
-             <div class="panel panel-primary margetop">
+
+            <div class="panel panel-primary margetop">
                 <div class="panel-heading">Bibliotheques</div>
                 <div class="panel-body">
-                    <div class="panel-body" >
-                        <table class="table table-striped table-bordered" class="form-inline"  >
+                    <div class="panel-body">
+                        <table class="table table-striped table-bordered" class="form-inline">
                             <thead>
                                 <tr align="center">
                                     <td>
@@ -65,7 +67,7 @@
                                             <!-- <img src="../images/bibliotheque-affectations.jpg" width="400px" height="200px"> -->
                                             <button type="submit" class="btn btn-success">
                                                 <!-- <span class="glyphicon glyphicon-search"> </span> -->
-                                                Bibliotheque des expressions 
+                                                Bibliotheque des expressions
                                             </button>
                                         </a>
                                     </td>
@@ -81,10 +83,10 @@
                                 </tr>
                             </thead>
                         </table>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </body>
 
-</html>
+    </html>

@@ -1,16 +1,16 @@
 <?php
 //require_once('identifier.php');
 require_once("connexiondb.php");
-if (isset($_GET['idCat'])) {
-    $idCat = $_GET['idCat'];
+if (isset($_GET['idTy'])) {
+    $idTy = $_GET['idTy'];
 } else {
-    header("location:categorys.php");
+    header("location:types.php");
 }
 
-$requete = "select * from category where ID=$idCat";
+$requete = "select * from type where ID=$idTy";
 $resultat = $pdo->query($requete);
-$category = $resultat->fetch();
-$nomCat = $category['label'];
+$type = $resultat->fetch();
+$nomTy = $type['label'];
 ?>
 
 
@@ -33,35 +33,29 @@ $nomCat = $category['label'];
         <link rel="stylesheet" type="text/css" href="../css/monstyle.css">
     </head>
 
-
-
-
-
-
-
     <body>
 
         <div class="container">
             <div class="panel panel-primary margetop">
-                <div class="panel-heading">Edition de La category :</div>
+                <div class="panel-heading">Edition de La type :</div>
 
 
 
                 <div class="panel-body">
-                    <form method="post" action="updateEtablissement.php" class="form">
+                    <form method="post" action="update-type.php" class="form">
 
 
 
                         <div class="from-group">
-                            <label class="from-control">id de la category : <?php echo $idCat ?></label>
-                            <input type="hidden" name="idCat" class="from-control" value="<?php echo $idCat ?>" />
+                            <label class="from-control">id de la type : <?php echo $idTy ?></label>
+                            <input type="hidden" name="idTy" class="from-control" value="<?php echo $idTy ?>" />
                         </div>
 
 
 
                         <div class="from-group">
-                            <label class="from-control">Nom de la category :</label>
-                            <input type="text" name="nomCat" placeholder="Nom de la category" class="from-control" value="<?php echo $nomCat ?>" />
+                            <label class="from-control">Nom de la type :</label>
+                            <input type="text" name="nomTy" placeholder="Nom de la type" class="from-control" value="<?php echo $nomTy ?>" />
                         </div>
 
 
