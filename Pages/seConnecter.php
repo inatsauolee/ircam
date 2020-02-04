@@ -13,7 +13,7 @@ if ($user = $resultat->fetch()) {
         header('location:avancer.php');
     } else if($user['role'] == 1) {
         $_SESSION['user'] = $user;
-        header('location:../index.html');
+        header('location:../index.php');
     } else {
         $_SESSION['erreurLogin'] = "</strong>Erreur!! Votre compte est désactivé.<br>Veuillez contacter l'administrateur";
         header('location:login.php');

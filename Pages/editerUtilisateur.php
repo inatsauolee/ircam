@@ -21,7 +21,7 @@
             <h1>Learning Zone</h1> 
         </div>
     </div>
-    <?php include("utilisateurs-content.php"); ?>
+    <?php include("editerUtilisateur-content.php"); ?>
 
 
     

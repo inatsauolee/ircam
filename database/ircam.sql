@@ -249,7 +249,7 @@ IF NOT EXISTS `user` (
 
 INSERT INTO `user`
   (`ID`, `first_name
-`, `last_name`, `email`, `username`, `password`, `role`) VALUES
+  `, `last_name`, `email`, `username`, `password`, `role`) VALUES
 (1, 'Ahmed', 'ELHAJOUTI', '', 'admin', '123', 0),
 (2, 'Mohamed', 'ELOUASTANI', '', 'admin', '5f4dcc3b5aa765d61d8327deb882cf99', 0);
 

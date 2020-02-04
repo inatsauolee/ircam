@@ -1,14 +1,14 @@
 <?php
-header('Content-type: text/html; charset=utf-8');
+
 require_once('identifier.php');
 require_once("connexiondb.php");
-$login = isset($_GET['login']) ? $_GET['login'] : "";
+$username = isset($_GET['username']) ? $_GET['username'] : "";
 $size = isset($_GET['size']) ? $_GET['size'] : 5;
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
 $offset = ($page - 1) * $size;
 
-$requeteUser = "select * from utilisateur where login like '%$login%'";
-$requeteCount = "select count(*) countUser from utilisateur";
+$requeteUser = "select * from user where username like '%$username%'";
+$requeteCount = "select count(*) countUser from user";
 
 $resultatUser = $pdo->query($requeteUser);
 $resultatCount = $pdo->query($requeteCount);
@@ -42,7 +42,7 @@ else
                 <div class="panel-body">
                     <form method="get" action="utilisateurs.php">
                         <div class="form-group">
-                            <input type="text" name="login" placeholder="Login..." class="form-control" value="<?php echo $login; ?>">
+                            <input type="text" name="username" placeholder="Login..." class="form-control" value="<?php echo $username; ?>">
                         </div>
 
                         <button type="submit" class="btn btn-success">
@@ -63,33 +63,37 @@ else
                     <table class="table table-striped table-bordered" class="form-inline">
                         <thead>
                             <tr>
-                                <td align=center>Login</td>
-                                <td align=center>E-mail</td>
+                                <td  align=center>Username</td>
+                                <td  align=center>E-mail</td>
+                                <td  align=center>First name</td>
+                                <td  align=center>Last name</td> 
                                 <td align=center>Role</td>
                                 <td align=center>Actions</td>
                             </tr>
                         </thead>
                         <tbody>
 
-                            <?php foreach ($resultatUser as $utilisateur) { ?>
+                            <?php foreach ($resultatUser as $user) { ?>
 
 
-                                <tr class="<?php echo $utilisateur['etat'] == 1 ? 'success' : 'danger' ?>">
-                                    <td> <?php echo $utilisateur['login'] ?> </td>
-                                    <td> <?php echo $utilisateur['email'] ?> </td>
-                                    <td> <?php echo $utilisateur['role'] ?> </td>
+                                <tr class="<?php echo $user['etat'] == 1 ? 'success' : 'danger' ?>">
+                                    <td> <?php echo $user['username'] ?> </td>
+                                    <td> <?php echo $user['email'] ?> </td>
+                                    <td> <?php echo $user['first_name'] ?> </td>
+                                    <td> <?php echo $user['last_name'] ?> </td>
+                                    <td> <?php echo $user['role'] ?> </td>
                                     <td>
-                                        <a href="editerUtilisateur.php?idUser=<?php echo $utilisateur['iduser'] ?>">
+                                        <a href="editerUtilisateur.php?ID=<?php echo $user['ID'] ?>">
                                             <span class="glyphicon glyphicon-edit"></span>
                                         </a>
                                         &nbsp &nbsp
-                                        <a onclick="return confirm('Etes-vous sur de vouloir supprimer le utilisateur?')" href="supprimerUtilisateur.php?idUser=<?php echo $utilisateur['iduser'] ?>">
+                                        <a onclick="return confirm('Etes-vous sur de vouloir supprimer le utilisateur?')" href="supprimerUtilisateur.php?ID=<?php echo $user['ID'] ?>">
                                             <span class="glyphicon glyphicon-trash "></span>
                                         </a>
                                         &nbsp &nbsp
-                                        <a href="activerUtilisateur.php?idUser=<?php echo $utilisateur['iduser'] ?>&etat=<?php echo $utilisateur['etat'] ?>">
+                                        <a href="activerUtilisateur.php?ID=<?php echo $user['ID'] ?>&etat=<?php echo $user['etat'] ?>">
                                             <?php
-                                            if ($utilisateur['etat'] == 1)
+                                            if ($user['etat'] == 1)
                                                 echo '<span class="glyphicon glyphicon-remove"></span>';
                                             else
                                                 echo '<span class="glyphicon glyphicon-ok"></span>';
@@ -105,7 +109,7 @@ else
                             <?php for ($i = 1; $i <= $nbrPage; $i++) {  ?>
                                 <li class="<?php if ($i == $page) echo 'active' ?>">
 
-                                    <a href="utilisateurs.php?page=<?php echo $i; ?>&login=<?php echo $login; ?>"> <?php echo $i; ?>
+                                    <a href="utilisateurs.php?page=<?php echo $i; ?>&username=<?php echo $username; ?>"> <?php echo $i; ?>
                                     </a>
 
 
