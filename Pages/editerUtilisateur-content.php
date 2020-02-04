@@ -17,6 +17,7 @@
     $first_name=$user['first_name'];
     $last_name=$user['last_name'];
     $email=$user['email'];
+    $password=$user['password'];
     $role=strtoupper($user['role']);
     $ID=$_GET['ID'];
 
@@ -26,7 +27,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>GestaGiaire</title>
+        <title>InuSselmad</title>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/monstyle.css">
     </head>
@@ -58,6 +59,10 @@
                             <label for="email">E-Mail :</label>
                             <input type="text" name="email" placeholder="E-Mail..." class="form-control" value="<?php echo $email ?>"/>                           
                         </div><br>
+                        <div>
+                            <label for="password">PASSWORD :</label>
+                            <input type="text" name="password" placeholder="Password..." class="form-control" value="<?php echo $password ?>"/>                           
+                        </div><br>
                         <div class="form-group">
                             <label for="email">Role :</label>
                             <select name="role" class="form-control">
@@ -70,7 +75,6 @@
                             Enregistrer
                         </button>
                          &nbsp;&nbsp;
-                        <a href="modifierPassword.php?ID=<?php echo $ID ?>">Changer le mot de passe</a>
                     </form>
                 </div>
             </div>
