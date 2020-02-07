@@ -37,7 +37,7 @@ if (strlen($nomEt)>=3){
                              
                                         
                         <button type="submit" class="btn btn-success">
-                            <span class="glyphicon glyphicon-plus"> </span>
+                            <span class="fa fa-plus"> </span>
                             Ajouter
                         </button>
                         &nbsp &nbsp

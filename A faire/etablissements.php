@@ -55,11 +55,11 @@
                              
                                         
                         <button type="submit" class="btn btn-success">
-                            <span class="glyphicon glyphicon-search"> </span>
+                            <span class="fa fa-search"> </span>
                             chercher...
                         </button>
                         &nbsp &nbsp
-                        <a href="nouvelleEtablissement.php"><sapn class="glyphicon glyphicon-plus" ></sapn> Nouvelle etablissement</a>
+                        <a href="nouvelleEtablissement.php"><sapn class="fa fa-plus" ></sapn> Nouvelle etablissement</a>
                     </form>
                             
                 
@@ -85,11 +85,11 @@
                                     <td> <?php echo $etablissement['nomEtablissement'] ?> </td>
                                     <td>
                                         <a href="editerEtablissement.php?idEt=<?php echo $etablissement['idEtablissement'] ?>">
-                                            <span class="glyphicon glyphicon-edit"></span>
+                                            <span class="fa fa-edit"></span>
                                         </a>
                                             &nbsp &nbsp
                                         <a onclick="return confirm('Etes-vous sur de vouloir supprimer cette etablissement?')"  href="supprimerEtablissement.php?idEt=<?php echo $etablissement['idEtablissement'] ?>">
-                                            <span class="glyphicon glyphicon-trash "></span>
+                                            <span class="fa fa-trash "></span>
                                         </a>
                                     </td>
                                 </tr>    

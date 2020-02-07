@@ -26,7 +26,7 @@
                                         <a href="categorys.php">
                                             <!-- <img src="../images/bibliotheque-parrains.jpg" width="400px" height="200px"> -->
                                             <button type="submit" class="btn btn-success">
-                                                <!-- <span class="glyphicon glyphicon-search"> </span> -->
+                                                <!-- <span class="fa fa-search"> </span> -->
                                                 Bibliotheque des categorys
                                             </button>
                                         </a>
@@ -35,7 +35,7 @@
                                         <a href="utilisateurs.php">
                                             <!-- <img src="../images/bibliotheque-fillier.jpg" width="400px" height="200px"> -->
                                             <button type="submit" class="btn btn-success">
-                                                <!-- <span class="glyphicon glyphicon-search"> </span> -->
+                                                <!-- <span class="fa fa-search"> </span> -->
                                                 bibliotheque des utilisateurs
                                             </button>
                                         </a>
@@ -46,7 +46,7 @@
                                         <a href="types.php">
                                             <!-- <img src="../images/bibliotheque-utilisateurs.jpg" width="400px" height="200px"> -->
                                             <button type="submit" class="btn btn-success">
-                                                <!-- <span class="glyphicon glyphicon-search"> </span> -->
+                                                <!-- <span class="fa fa-search"> </span> -->
                                                 Bibliotheque des types
                                             </button>
                                         </a>
@@ -55,7 +55,7 @@
                                         <a href="words.php">
                                             <!-- <img src="../images/bibliotheque-villes.jpg" width="400px" height="200px"> -->
                                             <button type="submit" class="btn btn-success">
-                                                <!-- <span class="glyphicon glyphicon-search"> </span> -->
+                                                <!-- <span class="fa fa-search"> </span> -->
                                                 Bibliotheque des words
                                             </button>
                                         </a>
@@ -66,7 +66,7 @@
                                         <a href="expressions.php">
                                             <!-- <img src="../images/bibliotheque-affectations.jpg" width="400px" height="200px"> -->
                                             <button type="submit" class="btn btn-success">
-                                                <!-- <span class="glyphicon glyphicon-search"> </span> -->
+                                                <!-- <span class="fa fa-search"> </span> -->
                                                 Bibliotheque des expressions
                                             </button>
                                         </a>
@@ -75,7 +75,7 @@
                                         <a href="avancer-content.php">
                                             <!-- <img src="../images/bibliotheque-etablissments.jpg" width="400px" height="200px"> -->
                                             <button type="submit" class="btn btn-success">
-                                                <!-- <span class="glyphicon glyphicon-search"> </span> -->
+                                                <!-- <span class="fa fa-search"> </span> -->
                                                 Vide...
                                             </button>
                                         </a>

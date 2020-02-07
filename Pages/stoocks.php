@@ -198,7 +198,7 @@
 
 
                             <button type="submit" class="btn btn-success">
-                                <span class="glyphicon glyphicon-plus"> </span>
+                                <span class="fa fa-plus"> </span>
                                 Ajouter
                             </button>
                         </div>

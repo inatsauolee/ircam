@@ -38,7 +38,7 @@ require_once("connexiondb.php");
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="glyphicon glyphicon-search"></span> <!-- Probleme d'affichage des icons! -->
+            <span class="fa fa-search"></span> <!-- Probleme d'affichage des icons! -->
             Languages
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -51,7 +51,7 @@ require_once("connexiondb.php");
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
-          <a href="login.php"><span class="glyphicon glyphicon-log-out">&nbsp;Deconnexion </span></a>
+          <a href="login.php"><span class="fa fa-log-out">&nbsp;Deconnexion </span></a>
         </button>
       </form>
     </div>
@@ -69,47 +69,51 @@ require_once("connexiondb.php");
       <div class="col-md-10">
         <div class="col-md-auto">
           <!-- Le mot en Anglais -->
-          <div class="form-group">
-            <label for="cin">Le mot en anglais :</label>
-            <input type="text" name="cin" placeholder="Veuillez de saisir Le mot en anglais" class="form-control" />
-          </div>
-          <!-- Le mot en Tifinagh -->
-          <div class="form-group">
-            <label for="cin">Le mot en Tifinagh :</label>
-            <input type="text" name="cin" placeholder="Veuillez de saisir Le mot en Tifinagh" class="form-control" />
-          </div>
-          <div class="form-group">
-            <label for="category">Category:</label>
-            <select name="category" id="category" class="form-control" style="text-transform: capitalize;">
-              <?php
+          <form method="post" action="insert-word.php">
+            <div class="form-group">
+              <label for="eLabel">Le mot en anglais :</label>
+              <input type="text" name="eLabel" placeholder="Veuillez de saisir Le mot en anglais" class="form-control" />
+            </div>
+            <!-- Le mot en Tifinagh -->
+            <div class="form-group">
+              <label for="tifinagh">Le mot en Tifinagh :</label>
+              <input type="text" name="tifinagh" placeholder="Veuillez de saisir Le mot en Tifinagh" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="category">Category:</label>
+              <select name="category" id="category" class="form-control" style="text-transform: capitalize;">
+                <?php
 
-              $resSe = $pdo->query("SELECT id,label from category")->fetchAll(PDO::FETCH_NUM);
-              foreach ($resSe as $row) {
-                echo "<option value=\"$row[0]\">$row[1]</option>";
-              }
+                $resSe = $pdo->query("SELECT id,label from category")->fetchAll(PDO::FETCH_NUM);
+                foreach ($resSe as $row) {
+                  echo "<option value=\"$row[0]\">$row[1]</option>";
+                }
 
-              ?>
-            </select>
-          </div>
+                ?>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label for="type">Type:</label>
-            <select name="type" id="type" class="form-control" style="text-transform: capitalize;">
-              <?php
+            <div class="form-group">
+              <label for="type">Type:</label>
+              <select name="type" id="type" class="form-control" style="text-transform: capitalize;">
+                <?php
 
-              $resSe = $pdo->query("SELECT id,label from type")->fetchAll(PDO::FETCH_NUM);
-              foreach ($resSe as $row) {
-                echo "<option value=\"$row[0]\">$row[1]</option>";
-              }
+                $resSe = $pdo->query("SELECT id,label from type")->fetchAll(PDO::FETCH_NUM);
+                foreach ($resSe as $row) {
+                  echo "<option value=\"$row[0]\">$row[1]</option>";
+                }
 
-              ?>
-            </select>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-lg btn-block" role="button">
-              <span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;&nbsp;&nbsp; + Ajouter
-            </a>
-          </div>
+                ?>
+              </select>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-success">
+                <span class="fa fa-plus"> </span>
+                Ajouter
+              </button>
+              &nbsp &nbsp
+            </div>
+          </form>
         </div>
       </div>
     </div>

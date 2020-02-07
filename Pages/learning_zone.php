@@ -28,7 +28,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-search"></span> <!-- Probleme d'affichage des icons! -->
+                <span class="fa fa-search"></span> <!-- Probleme d'affichage des icons! -->
                 Languages
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -41,7 +41,7 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
-                <a href="login.php"><span class="glyphicon glyphicon-log-out">&nbsp;Deconnexion </span></a>
+                <a href="login.php"><span class="fa fa-log-out">&nbsp;Deconnexion </span></a>
             </button>
           </form>
         </div>
@@ -69,7 +69,7 @@
                         <textarea class="form-control" rows="5" id="answer-sis"></textarea>
                     </div>
                     <a href="" class="btn btn-success btn-lg btn-block" role="button">
-                        <span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;&nbsp;&nbsp; Check
+                        <span class="fa fa-log-out"></span>&nbsp;&nbsp;&nbsp;&nbsp; Check
                     </a>
 
                 </div>

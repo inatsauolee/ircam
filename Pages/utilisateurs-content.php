@@ -46,7 +46,7 @@ else
                         </div>
 
                         <button type="submit" class="btn btn-success">
-                            <span class="glyphicon glyphicon-search"> </span>
+                            <span class="fa fa-search"> </span>
                             chercher...
                         </button>
                         &nbsp &nbsp
@@ -84,19 +84,19 @@ else
                                     <td> <?php echo $user['role'] ?> </td>
                                     <td>
                                         <a href="editerUtilisateur.php?ID=<?php echo $user['ID'] ?>">
-                                            <span class="glyphicon glyphicon-edit"></span>
+                                            <span class="fa fa-edit"></span>
                                         </a>
                                         &nbsp &nbsp
                                         <a onclick="return confirm('Etes-vous sur de vouloir supprimer le utilisateur?')" href="supprimerUtilisateur.php?ID=<?php echo $user['ID'] ?>">
-                                            <span class="glyphicon glyphicon-trash "></span>
+                                            <span class="fa fa-trash "></span>
                                         </a>
                                         &nbsp &nbsp
                                         <a href="activerUtilisateur.php?ID=<?php echo $user['ID'] ?>&etat=<?php echo $user['etat'] ?>">
                                             <?php
                                             if ($user['etat'] == 1)
-                                                echo '<span class="glyphicon glyphicon-remove"></span>';
+                                                echo '<span class="fa fa-remove"></span>';
                                             else
-                                                echo '<span class="glyphicon glyphicon-ok"></span>';
+                                                echo '<span class="fa fa-ok"></span>';
                                             ?>
                                         </a>
                                     </td>

@@ -28,7 +28,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-search"></span> <!-- Probleme d'affichage des icons! -->
+                <span class="fa fa-search"></span> <!-- Probleme d'affichage des icons! -->
                 Languages
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -41,7 +41,7 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
-                <a href="login.php"><span class="glyphicon glyphicon-log-out">&nbsp;Deconnexion </span></a>
+                <a href="login.php"><span class="fa fa-log-out">&nbsp;Deconnexion </span></a>
             </button>
           </form>
         </div>
@@ -67,7 +67,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="Learning_zone.php" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الحروف </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -87,7 +87,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="Learning_zone1.php" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الاعداد </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -107,7 +107,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الصفات </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -127,7 +127,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الاكل </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -147,7 +147,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الاتجاهات </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -167,7 +167,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; حروف الجر </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -187,7 +187,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الملابس </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -207,7 +207,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; المدرسة </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -227,7 +227,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; جسم الانسان </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -247,7 +247,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; السفر </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -267,7 +267,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; العائلة </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -287,7 +287,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; المهن </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -307,7 +307,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الوقت </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -327,7 +327,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الألوان </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -347,7 +347,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الطقس </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -367,7 +367,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الاماكن </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -387,7 +387,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الحيوانات </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -407,7 +407,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; التسوق </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -427,7 +427,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; المقارنة </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -447,7 +447,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الظروف </a> 
                         </div>
                         <div class="panel-body"><p></p>
@@ -467,7 +467,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                             <a href="" class="btn btn-info btn-lg btn-block" role="button" >
-                              <span class="glyphicon glyphicon-save"></span>
+                              <span class="fa fa-save"></span>
                               &nbsp;&nbsp;&nbsp;&nbsp; الاستفهام</a> 
                         </div>
                         <div class="panel-body"><p></p>

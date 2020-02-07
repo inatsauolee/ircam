@@ -42,12 +42,12 @@ else
 
 
                     <button type="submit" class="btn btn-success">
-                        <span class="glyphicon glyphicon-search"> </span>
+                        <span class="fa fa-search"> </span>
                         chercher...
                     </button>
                     &nbsp &nbsp
                     <a href="add-category.php">
-                        <sapn class="glyphicon glyphicon-plus"></sapn> Nouvelle category
+                        <sapn class="fa fa-plus"></sapn> Nouvelle category
                     </a>
                 </form>
 
@@ -76,11 +76,11 @@ else
                                 <td> <?php echo $category['label'] ?> </td>
                                 <td>
                                     <a href="editer-category.php?idCat=<?php echo $category['ID'] ?>">
-                                        <span class="glyphicon glyphicon-edit"></span>
+                                        <span class="fa fa-edit"></span>
                                     </a>
                                     &nbsp &nbsp
                                     <a onclick="return confirm('Etes-vous sur de vouloir supprimer cette category?')" href="supprimerCategory.php?idCat=<?php echo $category['ID'] ?>">
-                                        <span class="glyphicon glyphicon-trash "></span>
+                                        <span class="fa fa-trash "></span>
                                     </a>
                                 </td>
                             </tr>

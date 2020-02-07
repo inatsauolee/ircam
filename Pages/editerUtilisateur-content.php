@@ -71,7 +71,7 @@
                             </select>
                         </div><br>
                         <button type="submit" class="btn btn-success">
-                            <span class="glyphicon glyphicon-save"></span>
+                            <span class="fa fa-save"></span>
                             Enregistrer
                         </button>
                          &nbsp;&nbsp;
