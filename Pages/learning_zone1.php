@@ -1,3 +1,37 @@
+<?php
+// require_once('identifier.php');    //pour s'edentifer
+require_once("connexiondb.php");
+$bool = 0;
+
+$size = isset($_GET['size']) ? $_GET['size'] : 5; // La nombre des words qui affichant sur chaque page
+$page = isset($_GET['page']) ? $_GET['page'] : 1;  // la page choisir 
+$offset = ($page - 1) * $size;
+
+$nomWo = isset($_GET['nomWo']) ? $_GET['nomWo'] : "";
+$requete = "SELECT t.ID AS ID, w.label AS eLabel, t.tifinagh AS label, p.label AS type, c.label AS category, u.username AS creator
+ FROM word w, tawalt t, type p, category c, user u
+ WHERE w.tawalt_ID = t.ID
+ AND c.ID = t.category
+ AND p.ID = t.type
+ AND u.ID = t.creator
+ AND (w.label LIKE '%$nomWo%' 
+ OR t.label LIKE '%$nomWo%')
+ LIMIT $size offset $offset;";
+$requeteCount = $pdo->query("SELECT count(*) FROM word w, tawalt t WHERE w.tawalt_ID = t.ID AND (w.label LIKE '%$nomWo%' OR t.label LIKE '%$nomWo%')")->fetchAll(PDO::FETCH_NUM);
+$resultatEt = $pdo->query($requete)->fetchAll(PDO::FETCH_ASSOC);
+$resultatCount = count($resultatEt);
+$tabCount = $requeteCount[0][0];
+$nbrWord = $requeteCount[0][0];
+
+$reste = $tabCount % $size;             /* % L'operateur modulo: le rest de la divistion
+                                                    euclidienne de $nbrword par $size*/
+
+if ($reste === 0)                      //$nbrwords est un multiple de $size 
+    $nbrPage = $tabCount / $size;
+else
+    $nbrPage = floor($tabCount / $size) + 1;    // floor : la partie entière d'un nombre décimal
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
