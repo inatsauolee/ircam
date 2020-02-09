@@ -11,9 +11,9 @@
             <a href="../index.php" class="navbar-brand">InuSselmad</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="stagiaires.php">Study</a> </li>
-            <li><a href="statistiques.php">dectnary</a> </li>
-            <li><a href="avancer.php">biblio</a></li>
+            <li><a href="dashboard.php">Study</a> </li>
+            <li><a href="dictionary.php">dictionary</a> </li>
+            <li><a href="avancer.php">Bibliothèques</a></li>
             <li align="center"><a href="login.php"><span class="fa fa-log-out">&nbsp;Deconnexion </span></a></li>
         </ul>
     </div>
