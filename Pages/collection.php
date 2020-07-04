@@ -1,7 +1,9 @@
 <?php
+session_set_cookie_params(3600, "/");
+session_start();
 // require_once('identifier.php');    //pour s'edentifer
 require_once("connexiondb.php");
-$collectionID = $_GET['id'];
+$_SESSION["collection_ID"] = $collectionID = $_GET['id'];
 $requete = "SELECT * FROM course WHERE collection_ID = '$collectionID'";
 $resultatEt = $pdo->query($requete)->fetchAll(PDO::FETCH_ASSOC);
 ?>

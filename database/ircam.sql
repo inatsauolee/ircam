@@ -52,29 +52,6 @@ IF NOT EXISTS `category`
 -- Contenu de la table `category`
 --
 
-INSERT INTO `category` (`
-ID`,
-`label
-`, `creator`) VALUES
-(1, 'communication', 1),
-(30, 'Animal', 1),
-(31, 'Fruit', 1),
-(32, 'Fruit', 1),
-(33, 'dss', 1),
-(34, 'dss', 1),
-(35, 'Animal', 1),
-(36, 'dew', 1),
-(37, 'Fruit', 1),
-(38, 'Animal', 1),
-(39, 'Animal', 1),
-(40, 'dsfdsf', 1),
-(41, 'dsfdsf', 1),
-(42, 'dsfdsf', 1),
-(43, 'Animal', 1),
-(44, 'jsdfkjds', 1),
-(45, 'Animal', 1),
-(46, 'Animal', 1),
-(47, 'dsfdsf', 1);
 
 -- --------------------------------------------------------
 
@@ -97,12 +74,6 @@ IF NOT EXISTS `expression`
 --
 -- Contenu de la table `expression`
 --
-
-INSERT INTO `expression` (`
-ID`,
-`label
-`, `word_group`, `translation`) VALUES
-(1, 'masin issawal Tamazivt', '1,2', 'masin talks in Tamazight');
 
 -- --------------------------------------------------------
 
@@ -132,12 +103,6 @@ IF NOT EXISTS `grammar`
 --
 -- Contenu de la table `grammar`
 --
-
-INSERT INTO `grammar` (`
-ID`,
-`tawalt_ID
-`, `past`, `present`, `future`) VALUES
-(1, 1, 'ssiwlev, tessiwled, issiwel, tessiwel, nessiwel, tessiwlem, tessiwlent, ssiwlen, ssiwlent', 'ssawalev, tessawaled, issawal, tessawal, nessawal, tessawalem, tessawalent, ssawalen, ssawalent', 'ad ssiwlev, ad tessiwled, ad issiwel, ad tessiwel, ad nessiwel, ad tessiwlem, ad tessiwlent, ad ssiw');
 
 -- --------------------------------------------------------
 
@@ -176,13 +141,6 @@ IF NOT EXISTS `tawalt`
 -- Contenu de la table `tawalt`
 --
 
-INSERT INTO `tawalt` (`
-ID`,
-`tifinagh
-`, `label`, `type`, `category`, `creator`) VALUES
-(1, 'issiwel', 'issiwel', 1, 1, 1),
-(2, 'tamazivt', 'tamaziɣt', 0, 1, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -208,12 +166,6 @@ IF NOT EXISTS `type`
 -- Contenu de la table `type`
 --
 
-INSERT INTO `type` (`
-ID`,
-`label
-`, `creator`) VALUES
-(0, 'noun', 1),
-(1, 'verb', 1);
 
 -- --------------------------------------------------------
 
@@ -247,11 +199,6 @@ IF NOT EXISTS `user` (
 -- Contenu de la table `user`
 --
 
-INSERT INTO `user`
-  (`ID`, `first_name
-  `, `last_name`, `email`, `username`, `password`, `role`) VALUES
-(1, 'Ahmed', 'ELHAJOUTI', '', 'admin', '123', 0),
-(2, 'Mohamed', 'ELOUASTANI', '', 'admin', '5f4dcc3b5aa765d61d8327deb882cf99', 0);
 
 -- --------------------------------------------------------
 
@@ -278,12 +225,7 @@ IF NOT EXISTS `word`
 -- Contenu de la table `word`
 --
 
-INSERT INTO `word` (`
-ID`,
-`tawalt_ID
-`, `label`) VALUES
-(1, 1, 'talk'),
-(2, 2, 'tamazight');
+
 
 --
 -- Contraintes pour les tables exportées
